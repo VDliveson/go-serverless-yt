@@ -1,7 +1,6 @@
 package main
 
 import (
-	"os"
 	"github.com/VDliveson/go-serverless-yt/pkg/handlers"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
