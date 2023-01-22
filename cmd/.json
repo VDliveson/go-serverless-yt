@@ -1,0 +1,5 @@
+curl --header type "Content-Type : application/json" --request POST --data '{"email":"vanshajduggal1234@gmail.com","firstName":"Vanshaj","lastName":"Duggal"}' https://ijwl7uovsc.execute-api.us-west-2.amazonaws.com/staging
+
+curl -X GET https://ijwl7uovsc.execute-api.us-west-2.amazonaws.com/staging
+
+curl -X GET https://ijwl7uovsc.execute-api.us-west-2.amazonaws.com/staging\?email\=vanshajduggal1234@gmail.com

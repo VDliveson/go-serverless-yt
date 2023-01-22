@@ -17,7 +17,8 @@ var(
 )
 
 func main(){
-	region := os.Getenv("AWS_REGION")
+	// region := os.Getenv("AWS_REGION") //ap-south-1 or   us-west-2
+	region := "us=west-2" 
 	awsSession,err := session.NewSession(&aws.Config{
 		Region: aws.String(region),
 	})
@@ -31,7 +32,10 @@ func main(){
 
 }
 
-const tableName = "LambdaInGoUser"
+// const tableName = "LambdaInGoUser"
+
+const tableName = "go-serverless-yt"
+
 
 func handler(req events.APIGatewayProxyRequest) (*events.APIGatewayProxyResponse, error) {
 	switch req.HTTPMethod{
