@@ -18,7 +18,7 @@ var(
 
 func main(){
 	// region := os.Getenv("AWS_REGION") //ap-south-1 or   us-west-2
-	region := "us=west-2" 
+	region := "us-west-2" 
 	awsSession,err := session.NewSession(&aws.Config{
 		Region: aws.String(region),
 	})
